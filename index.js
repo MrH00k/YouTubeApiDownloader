@@ -6,6 +6,7 @@ const { v4: uuidv4 } = require('uuid');
 const fs = require('fs');
 const sanitize = require('sanitize-filename');
 const ffmpeg = require('fluent-ffmpeg');
+const { exec } = require('child_process');
 
 const app = express();
 
@@ -215,6 +216,23 @@ app.get('/api/download/file/:fileName', async (req, res) => {
   }
 });
 
-app.listen(3000, () => {
+const server = app.listen(3000, () => {
   console.log('Servidor en ejecución en el puerto 3000');
+  const url = 'http://localhost:3000';
+  exec(getOpenCommand(url), (error, stdout, stderr) => {
+    if (error) {
+      console.error('Error al abrir el navegador:', error);
+    }
+  });
 });
+
+function getOpenCommand(url) {
+  switch (process.platform) {
+    case 'darwin':
+      return `open ${url}`;
+    case 'win32':
+      return `start ${url}`;
+    default:
+      return `xdg-open ${url}`;
+  }
+}
