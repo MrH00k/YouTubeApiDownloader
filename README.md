@@ -3,7 +3,7 @@
 <h3 align="center">A passionate Frontend and Backend developer from México</h3>
 
 ### `How the API works`
-  
+  You need to have ffmpeg (https://ffmpeg.org/) installed on your computer for it to work properly.
 | 💊 Function  | 🔗 URL | 🔍 Variables to send via POST (except for the file download by name which is by GET)
 |:--------:|:--------------:|:--------------:|
 | `Get all download links (Video & Audio)` | http://localhost:3000/api | `yturl = <url>` `format = all` |
