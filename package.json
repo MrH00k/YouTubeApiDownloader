@@ -1,0 +1,22 @@
+{
+  "name": "YouTubeApiDownloader",
+  "version": "1.0.0",
+  "description": "APi For YouTube",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "test": "echo \"Error: no hay pruebas especificadas\" && exit 1"
+  },
+  "author": "Kevin Huerta",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.18.2",
+    "fluent-ffmpeg": "^2.1.2",
+    "sanitize-filename": "^1.6.3",
+    "uuid": "^9.0.0",
+    "ytdl-core": "^4.11.4"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.12"
+  }
+}
