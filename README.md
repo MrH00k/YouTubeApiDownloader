@@ -42,5 +42,5 @@ npm start
 
 ### `Connect with me:`
 <p align="left">
-<a href="https://www.facebook.com/mrh00k404"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/facebook.svg" alt="mrh00k404" height="30" width="40" /></a>
+<a href="https://www.facebook.com/mrh00k404" target="_blank" rel="noreferrer noopener"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/facebook.svg" alt="mrh00k404" height="30" width="40" /></a>
 </p>
